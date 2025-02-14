@@ -12,6 +12,13 @@ This repository contains implementations of AI agents developed while following 
 - [Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
 - [Official Course Repository](https://github.com/huggingface/agents-course)
 
+## 🤖 Implemented Agents
+
+### 1. Serverless Agent (Jupyter Notebook)
+Located in `agents/dummy_agent_library.ipynb`, this is our first implementation using Jupyter notebook. It demonstrates basic agent capabilities in a serverless environment.
+
+*More agents will be added as I progress through the course.*
+
 ## 📚 Course Content
 
 ### Unit 1: Introduction to AI Agents
@@ -45,21 +52,34 @@ This repository contains implementations of AI agents developed while following 
 - Python 3.8 or higher
 - Basic understanding of machine learning concepts
 - Familiarity with Hugging Face's ecosystem
+- Jupyter Notebook (for serverless agent)
 
-### Installation
+### Environment Setup
+
+#### For Jupyter Notebook Agent
 1. Clone this repository:
 ```bash
 git clone https://github.com/yourusername/huggingface-agents.git
 cd huggingface-agents
 ```
 
-2. Create a virtual environment (recommended):
+2. Set up your environment variables:
+   - Create a `.env` file in the `agents/` directory
+   - Add your required environment variables (refer to notebook)
+
+3. Open the notebook:
+```bash
+jupyter notebook agents/dummy_agent_library.ipynb
+```
+
+#### For Other Agents (Coming Soon)
+1. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt  # Note: Will be added as agents are implemented
 ```
@@ -69,8 +89,10 @@ pip install -r requirements.txt  # Note: Will be added as agents are implemented
 ```
 huggingface-agents/
 ├── README.md
-└── agents/          # Directory for different agent implementations
-    └── ...
+└── agents/
+    ├── dummy_agent_library.ipynb  # Serverless agent implementation
+    ├── .env                       # Environment variables (not tracked in git)
+    └── ...                        # Future agent implementations
 ```
 
 ## 🤝 Contributing
