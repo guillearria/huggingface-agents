@@ -17,6 +17,9 @@ This repository contains implementations of AI agents developed while following 
 ### 1. Serverless Agent (Jupyter Notebook)
 Located in `agents/dummy_agent_library.ipynb`, this is our first implementation using Jupyter notebook. It demonstrates basic agent capabilities in a serverless environment.
 
+### 2. Todo Agent
+Located in `agents/todo_agent/app.py`, this is our first implementation using Hugging Face Spaces and Gradio. It should be able to add, edit, and delete simple todo items.
+
 *More agents will be added as I progress through the course.*
 
 ## 📚 Course Content
