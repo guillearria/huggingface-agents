@@ -75,16 +75,17 @@ cd huggingface-agents
 jupyter notebook agents/dummy_agent_library.ipynb
 ```
 
-#### For Other Agents (Coming Soon)
-1. Create a virtual environment (recommended):
+#### todo_agent
+1. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-2. Install dependencies:
+2. Run app:
 ```bash
-pip install -r requirements.txt  # Note: Will be added as agents are implemented
+python app.py
 ```
 
 ## 📝 Project Structure
