@@ -4,13 +4,15 @@ import requests
 import pytz
 import yaml
 from tools.final_answer import FinalAnswerTool
-
+from tools.todo_tools import add_todo, edit_todo, delete_todo, list_todos, toggle_todo, get_todo
 from Gradio_UI import GradioUI
 
-# Below is an example of a tool that does nothing. Amaze us with your creativity !
+
 @tool
-def my_custom_tool(arg1:str, arg2:int)-> str: #it's import to specify the return type
-    #Keep this format for the description / args / args description but feel free to modify the tool
+def tool_example(arg1:str, arg2:int)-> str: 
+    # it's import to specify the return type
+    # keep this format for the description / args / args description
+    # modify the tool
     """A tool that does nothing yet 
     Args:
         arg1: the first argument
@@ -55,7 +57,7 @@ with open("prompts.yaml", 'r') as stream:
     
 agent = CodeAgent(
     model=model,
-    tools=[final_answer,get_current_time_in_timezone], ## add your tools here (don't remove final answer)
+    tools=[final_answer,get_current_time_in_timezone,add_todo,edit_todo,delete_todo,list_todos,toggle_todo,get_todo],
     max_steps=6,
     verbosity_level=1,
     grammar=None,
